@@ -1,8 +1,8 @@
-a.out:
-	gcc hello.c
+fib: fib.c
+	gcc -o fib fib.c
 
 clean:
-	rm hello
+	rm fib
 
-test: a.out
+test: fib
 	bash test.sh
